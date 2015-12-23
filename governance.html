@@ -46,25 +46,12 @@
 "height":    400,
 "geographyConfig": {
  "dataUrl": "ccy.json",
-"popupTemplate":  function(geography, data) { //this function should just return a string
-    return '<div class=hoverinfo><strong>' + geography.properties.name + '</strong></div>';
-    }   
+"popupTemplate": "#! function(geography, data) { //this function should just return a string\n    return '<div class=hoverinfo><strong>' + geography.properties.name + '</strong></div>';\n    }  !#" 
 },
 "scope": "states1",
 "labels": true,
 "bodyattrs": "ng-app ng-controller=rChartsCtrl",
-"setProjection":  function( element, options ) {
-  var projection, path;
-  projection = d3.geo.mercator()
-  .center([38.5, 1.3]) //centers the map on the conservancies
-  .scale(10000) // makes it larger
-  .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
-  
-  path = d3.geo.path().projection( projection );
-  
-  return {path: path, projection: projection};
-  
-  } ,
+"setProjection": "#! function( element, options ) {\n  var projection, path;\n  projection = d3.geo.mercator()\n  .center([38.5, 1.3]) //centers the map on the conservancies\n  .scale(10000) // makes it larger\n  .translate([element.offsetWidth / 2, element.offsetHeight / 2]);\n  \n  path = d3.geo.path().projection( projection );\n  \n  return {path: path, projection: projection};\n  \n  } !#",
 "fills": {
  "A": "#67000D",
 "B": "#CB181D",

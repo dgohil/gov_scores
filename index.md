@@ -50,40 +50,13 @@ NRT Governance Scores are:
   <tr> <td align="right"> 3 </td> <td align="right"> 2014.00 </td> <td align="right"> 0.46 </td> </tr>
    </table>
 
---- 
-## Interactive Governance Chart
-<script>
-$('#myslide').on('slideenter', function(){
-  $(this).find('article')
-    .append('<iframe src="https://dgohil.shinyapps.io/app2"></iframe>')
-});
-$('#myslide').on('slideleave', function(){
-  $(this).find('iframe').remove();
-});
-</script>
----     
+--- #myslide
 
 
-
-
-<div class="row-fluid">
-  <div class="col-sm-4">
-    <form class="well">
-      <div class="form-group shiny-input-container">
-        <label class="control-label" for="year">Choose Year</label>
-        <div>
-          <select id="year"><option value="2012" selected>2012</option>
-<option value="2013">2013</option>
-<option value="2014">2014</option></select>
-          <script type="application/json" data-for="year" data-nonempty="">{}</script>
-        </div>
-      </div>
-    </form>
-  </div>
-  <div class="col-sm-8">
-    <div id="nvd3plot" class="shiny-html-output nvd3 rChart"></div>
-  </div>
+<div>
+<iframe src="https://dgohil.shinyapps.io/app2/", width=500, height=600></iframe>
 </div>
+
 
 --- 
 ## Choroplethic Governance Map
