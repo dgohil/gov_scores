@@ -11,7 +11,66 @@ widgets     : [mathjax, quiz, bootstrap, shiny, interactive] # {mathjax, quiz, b
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ext_widgets : {rCharts:  libraries/nvd3}
----  &tocol_rev
+
+--- #myslide
+
+<div>
+<iframe src="https://dgohil.shinyapps.io/map_app/", width=800, height=400></iframe>
+</div>
+
+## Map of NRT Conservancies
+
+--- &vcenter
+
+## NRTs Mission Statement
+<style>
+ol {
+  line-height: 5em;
+}
+content {
+  font-family: bold;
+  margin-bottom: 20px;
+  color: red;
+  font-size: 24px;
+}
+p.red {
+  color:  #A00F0F;
+  font-size: 40px;
+}
+</style>
+
+.red **To develop resilient community conservancies that transform lives, secure peace, and conserve natural resources.**
+
+---
+
+## Community Conservancies
+
+**Lands that are collectively owned and managed by the resident indigenous communities are being set aside for wildlife conservation and sustainable livestock practices.**
+
+The Need
+>  - Frequent Drought
+>  - Sparse Government Services
+>  - Degraded Rangelands and Poor Livestock Production
+>  - Security Issues
+>   - Cattle Rustling
+>   - Ivory Poaching
+>   - Ethnic rivalries
+  
+**Peace and Security Needed for Livelihood Development, Protection of Wildlife and Growth of the Region.**
+
+--- &carousel
+
+## Management Hierachies
+
+*** {class: active, img: "assets/img/nrtorgan.jpg"}
+NRT Organgram
+
+*** {img: "assets/img/Slide1.tiff"}
+Conservancy Organogram
+
+
+---  &twocol_eq
+
 ## Overview of NRT Governance Scores
 ***=left
 NRT Governance Scores are:
@@ -28,11 +87,20 @@ NRT Governance Scores are:
 - Report Cards
 - Adaptive Management
 
-*** =right
-![width](nrt_main_map.jpg)
+***=right
+**Community Feedback**
 
+- Social COMMS
+ - Collect annually?
+ - Need to integrate into score?
+ - Unbiased
+ 
+- Map neglected areas
+- "Benefit" assessment
+- "Impact" asessment
 
---- &twocol
+--- &tocol_rev
+
 ## Governance Scores: 2012-2014
 *** =left
 
@@ -40,6 +108,7 @@ NRT Governance Scores are:
 ![plot of chunk gov_score_graph1](assets/fig/gov_score_graph1-1.png) 
 
 ***=right
+**Average Annual Governance Scores**
 
 
 
@@ -66,6 +135,32 @@ NRT Governance Scores are:
 
 
 <iframe src=' assets/fig/ch2-1.html ' scrolling='no' frameBorder='0' seamless class='rChart datamaps ' id=iframe- chart_1 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+
+--- #myslide2
+
+
+<div>
+<iframe src="https://dgohil.shinyapps.io/gov_scomms/", width=500, height=600></iframe>
+</div>
+
+--- &twocol
+
+## Integration with Social COMMS
+*** =right
+- Importance
+- Objectivity
+- Survey Improvement
+  - Support from Community
+  - Transparency
+  
+  
+  
+**Build Strong Conservancies.**
+
+*** =left
+![width](assets/img/IMG_0567.jpg)
+
 
 --- {
 tpl: thankyou

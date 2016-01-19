@@ -1250,18 +1250,19 @@ article.smaller q:before, article.smaller q:after {
 
 /* line 862, ../scss/default.scss */
 .thank-you-slide {
-  background: #C0D9AF !important;
+  background: #A00F0F !important;
   color: black;
 }
 /* line 866, ../scss/default.scss */
 .thank-you-slide h2 {
   font-size: 80px;
-  color: black;
+  color: white;
 }
 /* line 871, ../scss/default.scss */
 .thank-you-slide article > p {
   margin-top: 2em;
-  font-size: 24pt;
+  font-size: 30pt;
+  color: white;
 }
 /* line 876, ../scss/default.scss */
 .thank-you-slide > p {
@@ -1269,6 +1270,7 @@ article.smaller q:before, article.smaller q:after {
   bottom: 80px;
   font-size: 24pt;
   line-height: 1.3;
+  color: white;
 }
 
 /* line 884, ../scss/default.scss */

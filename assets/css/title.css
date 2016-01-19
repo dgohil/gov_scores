@@ -1,0 +1,21 @@
+.title-slide {
+  background-color: #A00F0F;
+  /* background-color: #CBE7A5; #EDE0CF; ; #CA9F9D*/
+  /*background-image:url(assets/img/NRTlogo_highres.jpg);*/
+}
+
+.title-slide {
+     background-image: url(assets/img/NRTlogo_highres.jpg);
+   }
+   
+.title-slide hgroup > h1{
+ font-family: 'Oswald', 'Helvetica', sanserif; 
+}
+
+.title-slide hgroup > h1, 
+.title-slide hgroup > h2,
+.title-slide hgroup > h3 
+{
+  color: #FFFFFF ;  /* ; #EF5150*/
+}
+

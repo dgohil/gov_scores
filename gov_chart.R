@@ -34,3 +34,70 @@ gov_perc = d[, list(conservancy=unique(conservancy), percentage=as.numeric(table
 gov_perc1 <- as.data.frame(gov_perc)
 write.csv(gov_perc1, "governance_percentages.csv")
 ```
+ccy <- read.csv("slides/ccy.csv")
+library(vcdExtra)
+str(ccy)
+
+#fair_distribution
+fair <- structable(ccy~fair_distributed,ccy)
+fair <- round((prop.table(as.matrix(fair), margin=2)),2)
+fair
+
+#satisfied
+fair <- structable(ccy~ccy_satisfaction,ccy)
+fair <- round((prop.table(as.matrix(fair), margin=2)),2)
+fair
+
+#communications
+fair <- structable(ccy~ccy_communication,ccy)
+fair <- round((prop.table(as.matrix(fair), margin=2)),2)
+fair
+
+fair <- structable(ccy~communication_neighbours,ccy)
+fair <- round((prop.table(as.matrix(fair), margin=2)),2)
+fair
+
+#revenues
+fair <- structable(ccy~trust_revenue,ccy)
+fair <- round((prop.table(as.matrix(fair), margin=2)),2)
+fair
+
+#traditional
+fair <- structable(ccy~support_traditional,ccy)
+fair <- round((prop.table(as.matrix(fair), margin=2)),2)
+fair
+
+#edu_bursary
+fair <- structable(ccy~received_bursary,ccy)
+fair <- round((prop.table(as.matrix(fair), margin=2)),2)
+fair
+
+##wellbeing
+fair <- structable(ccy~general_wellbeing,ccy)
+fair <- round((prop.table(as.matrix(fair), margin=2)),2)
+fair
+
+#agm
+fair <- structable(ccy~agm,ccy)
+fair <- round((prop.table(as.matrix(fair), margin=2)),2)
+fair
+
+library(plyr)
+library(reshape)
+benefits <- reshape(ccy,
+                    varying=c("benefits_received",
+                              "benefits_received1",
+                              "benefits_received2",
+                              "benefits_received3",
+                              "benefits_received4"),
+                    v.names="ben",
+                    timevar="ben_type",
+                    times=c("benefits_received",
+                    "benefits_received1",
+                    "benefits_received2",
+                    "benefits_received3",
+                    "benefits_received4"),
+                    direction="long")
+
+str(benefits)
+
